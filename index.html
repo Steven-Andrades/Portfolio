@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Andrades</title>
+    <!-- Font Awesome icons (free) -->
+    <script src="https://kit.fontawesome.com/cf7fcf7673.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sixtyfour&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<!-- Body -->
+<body id="page">
+    <div class="body background-nav">
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a class="navbar-img d-flex" href="#logo">
+                    <img src="assets/img/img/steven-andrades-logo.svg" id="logo" alt="Display Image">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center">   
+                        <li class="nav-item">
+                            <a class="nav-link nav-header active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-header" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-header" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-header" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home -->
+        <section id="home" class="blobby-bg">
+            <div class="container text-center">
+                <img class="profile-img" src="assets/img/img/profile-picture01.png" alt="Profile Picture">
+                <h1 class="tourney-h2 text-glow">Steven Andrades</h1>
+                <p class="tourney-h2 fw-bold fs-1 py-2">Developer | Creator</p>
+                <div class="justify-content-sm-center py-3">
+                    <a class="btn btn-primary btn-lg" href="#portfolio" role="button">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <div class="container pt-5 pb-3">
+                <h2 class="tourney-h2 text-center text-white">Projects</h2>
+            </div>
+            <!-- Filter -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-auto">
+                    <div class="btn-group" role="group" aria-label="Project Filter">
+                        <button type="button" class="btn btn-filter filter-btn active px-2" data-filter="all">All</button>
+                        <button type="button" class="btn btn-filter filter-btn px-2" data-filter="code">Code</button>
+                        <button type="button" class="btn btn-filter filter-btn px-2" data-filter="3d">3D</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid -->
+            <div class="album">
+                <div class="container py-1">
+                    <div id="portfolio-grid" class="row row-cols-xl-3 row-cols-md-2 row-cols-sm-1 row-cols-1 g-3 justify-content-center">
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/typical-tech-tools.png" alt="Typical Tech Tools Project" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Typical Tech Tools</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">C#</span>
+                                        <span class="tools">ASP.NET Core MVC</span>
+                                        <span class="tools">SQL</span>
+                                        <span class="tools">SSMS</span>
+                                        <span class="tools">EF Core</span>
+                                        <span class="tools">HTML</span>
+                                    </div>
+                                    <p class="card-text">An e-commerce platform with secure authentication, file encryption, product management, user roles, comment system, and warranty claim handling.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://github.com/Steven-Andrades/Typical-Tech-Tools" target="_blank"
+                                            rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                            View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/sams-warehouse.png" alt="Sam's Warehouse" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 flex-wrap fw-bold">Sam's Warehouse</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">C#</span>
+                                        <span class="tools">ASP.NET Core MVC</span>
+                                        <span class="tools">SQL</span>
+                                        <span class="tools">SSMS</span>
+                                        <span class="tools">EF Core</span>
+                                        <span class="tools">HTML</span>
+                                        <span class="tools">CSS</span>
+                                        <span class="tools">JavaScript</span>
+                                    </div>
+                                    <p class="card-text">Complete shopping cart application with user login, product catalog, order history, and checkout process for seamless e-commerce experience.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://github.com/Steven-Andrades/Shopping-Cart-App" target="_blank"
+                                            rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                            View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/survey-network.png" alt="Survey Network" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Survey Network</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Java</span>
+                                        <span class="tools">Java Swing</span>
+                                        <span class="tools">Spring Layout</span>
+                                    </div>
+                                    <p class="card-text">A Java client-server application features a multi-window GUI for administrators to create and manage surveys and participants to respond in real-time.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://github.com/Steven-Andrades/Survey-Network" target="_blank"
+                                            rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/weather-api-swagger.png" alt="Weather API" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Weather API</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">C#</span>
+                                        <span class="tools">ASP.NET Core API</span>
+                                        <span class="tools">Swagger</span>
+                                        <span class="tools">NoSQL</span>
+                                        <span class="tools">MongoDB Compass</span>
+                                        <span class="tools">Mongo Atlas</span>
+                                    </div>
+                                    <p class="card-text">A RESTful Weather API provides weather data management, sensor reading retrieval and analysis, and role-based access control with user authentication.</p>
+                                    <div class="btn-link mt-auto">
+                                            <a href="https://github.com/Steven-Andrades/Weather-API" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/room-plan.png" alt="Room Plan" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Room Plan</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Java</span>
+                                        <span class="tools">Java Swing</span>
+                                        <span class="tools">Spring Layout</span>
+                                    </div>
+                                    <p class="card-text">Interactive furniture planning application with grid-based layout, colour coding, multiple file format support, and sorting/searching capabilities.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://github.com/Steven-Andrades/Room-Plan" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                            View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/kidd-esports.png" alt="Kidd Esports" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Kidd Esports</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">C#</span>
+                                        <span class="tools">.NET</span>
+                                        <span class="tools">WPF</span>
+                                        <span class="tools">SQL</span>
+                                        <span class="tools">SSMS</span>                              
+                                    </div>
+                                    <p class="card-text">Competition management system tracking teams, events, games, and match results with automatic points calculation based on tournament outcomes.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://github.com/Steven-Andrades/Kidd-Esports" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                            View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/local-recycler.png" alt="Local Recycler" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Local Recycler</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Java</span>
+                                        <span class="tools">Java Swing</span>
+                                        <span class="tools">Spring Layout</span>
+                                    </div>
+                                    <p class="card-text">A recycling contact manager application with full CRUD operations, search functionality, and filtering options for recycling businesses and material type.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://github.com/Steven-Andrades/Local-Recycler" target="_blank"
+                                            rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">                 
+                                            View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="code">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/game-maker.png" alt="Game Maker" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Game Maker</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">C#</span>
+                                        <span class="tools">.NET</span>
+                                        <span class="tools">WPF</span>
+                                    </div>
+                                    <p class="card-text">Team management software with CRUD operations to manage team details including names, contact information, and competition points.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://github.com/Steven-Andrades/Game-Maker" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">                                         
+                                            View <i class="fa-brands fa-github fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="3d">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/homer.png" alt="The Homer" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">The Homer</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Maya</span>
+                                        <span class="tools">Affinity Photo</span>
+                                        <span class="tools">Substance Painter</span> 
+                                    </div>
+                                    <p class="card-text">A 3D recreation of Homer Simpson's custom car design, featuring detailed modelling from the classic episode with a cel-shading stylised effect.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://skfb.ly/oPITR" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <img src="assets/img/icons/sketchfab.png" alt="Sketchfab" height="20px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="3d">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/kameHouse.png" alt="Kame House" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Kame House</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Maya</span>
+                                        <span class="tools">Affinity Photo</span>
+                                        <span class="tools">Substance Painter</span> 
+                                        <span class="tools">Substance Designer</span>
+                                        <span class="tools">Marmoset<span>                                       
+                                    </div>
+                                    <p class="card-text">Charming low-poly diorama of Master Roshi's island home from the Dragon Ball series, complete with a cel-shading appeal for a cartoonish appeal.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://skfb.ly/oPITR" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <img src="assets/img/icons/sketchfab.png" alt="Sketchfab" height="20px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="3d">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/bunker.png" alt="Bunker" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Bunker</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Maya</span>
+                                        <span class="tools">Affinity Photo</span> 
+                                        <span class="tools">Affinity Designer</span>
+                                        <span class="tools">Substance Painter</span> 
+                                        <span class="tools">Substance Designer</span>
+                                        <span class="tools">Toolbag 4</span> 
+                                        <span class="tools">Unreal Engine 4</span>
+                                    </div>
+                                    <p class="card-text">An atmospheric underground bunker environment with realistic lighting, detailed textures, custom shaders and post-apocalyptic aesthetic.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://skfb.ly/oPITR" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <i class="fa-brands fa-unreal-engine fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="3d">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/nextWorld.png" alt="Next World" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Next World</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Maya</span>
+                                        <span class="tools">Affinity Photo</span> 
+                                        <span class="tools">Affinity Designer</span>
+                                        <span class="tools">Substance Painter</span> 
+                                        <span class="tools">Adobe Photoshop</span>
+                                        <span class="tools">Unity</span>
+                                    </div>
+                                    <p class="card-text">A collection of VR-ready props and environments created for Next World Enterprises, showcasing over 4 years of 3D art evolution.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://skfb.ly/oPITR" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <i class="fa-brands fa-unity fs-6 align-content-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="3d">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/gameboy.png" alt="Game Boy Color" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Game Boy Color</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Maya</span>
+                                        <span class="tools">Substance Painter</span> 
+                                        <span class="tools">Adobe Photoshop</span>
+                                        <span class="tools">Toolbag 4</span> 
+                                    </div>
+                                    <p class="card-text">A faithful low-poly recreation of the classic Nintendo handheld console, complete with a nostalgic green colour scheme.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://skfb.ly/oPITR" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <img src="assets/img/icons/sketchfab.png" alt="Sketchfab" height="20px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-type="3d">
+                            <div class="card shadow-sm">
+                                <img src="assets/img/portfolio/saa.png" alt="Single Action Army" class="card-img-top">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="montserrat-h3 fw-bold">Single Action Army</h3>
+                                    <div class="d-flex flex-wrap align-items-center">
+                                        <span class="tools">Maya</span>
+                                        <span class="tools">Substance Painter</span> 
+                                    </div>
+                                    <p class="card-text">Detailed revolver model inspired by Metal Gear Solid's Revolver Ocelot character, with realistic materials.</p>
+                                    <div class="btn-link mt-auto">
+                                        <a href="https://skfb.ly/oPITR" target="_blank" rel="noopener noreferrer" class="btn btn-sm text-white text-uppercase">
+                                                View <img src="assets/img/icons/sketchfab.png" alt="Sketchfab" height="20px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about-me">
+            <div class="container py-5">
+                <h2 class="tourney-h2">About Me</h2>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                        <div class="col-md-6 mb-4 mb-md-0 paragraph">
+                            <p>I'm a fresh developer and an experienced 3D artist who builds at the intersection of creativity and code. My work spans full-stack web applications and software programs, alongside detailed 3D environments and game assets. I bring the same attention to craft whether I'm writing code or modelling in a 3D software package.</p>
+                            <p>I've developed this portfolio to showcase some of the work I've created over the years, feel free to explore. I'm currently looking for a new role where I can bring relevant skills to the table, so if my work catches your eye, lets connect. I'd love to hear about any opportunities where I might be of service.</p>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <img class="about-me-img" src="assets/img/img/profile-picture02.jpg" alt="Steven"></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap align-items-center justify-content-center">
+                    <img src="assets/img/icons/controller.png" alt="Gaming" class="hobbies">
+                    <img src="assets/img/icons/exercise.png" alt="Exercise" class="hobbies">
+                    <img src="assets/img/icons/motorcycle.png" alt="Motorcycles" class="hobbies">
+                    <img src="assets/img/icons/space.png" alt="Space" class="hobbies">
+                    <img src="assets/img/icons/technology.png" alt="Technology" class="hobbies">
+                </div>      
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container py-3">
+                <div class="border-corner py-5">
+                    <h2 class="tourney-h2 text-center">Get In Touch</h2>
+                    <div class="row">
+                        <div class="d-flex flex-column align-items-center mx-2">
+                            <p class="paragraph">If interested, feel free to contact me.</p>
+                            <div class="icon-contact"><i class="far fa-envelope"></i></div>
+                            <div class="paragraph">Email</div><a class="email mx-2"
+                                href="mailto:stevenandrades88@gmail.com">stevenandrades@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer" href="#footer">
+            <footer class="container text-center align-items-center">
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="footer-icons">
+                        <a href="https://github.com/Steven-Andrades" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="https://sketchfab.com/stevenandrades" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/icons/sketchfab.png" alt="Sketchfab" height="35px">
+                        </a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="https://www.artstation.com/stevenandrades" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-artstation"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <span class="mb-3 mb-md-0 text-white">Designed and built by Steven Andrades.<br>© <span id="current-year"></span> All rights reserved.</span>
+                </div>
+            </footer>
+        </section>
+        </div>
+    <!-- JS Link -->
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
