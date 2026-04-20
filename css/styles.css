@@ -433,6 +433,12 @@
   transition: transform 0.3s ease-in-out;
 }
 
+@media (max-width: 576px) {
+  .hobbies {
+    margin: 1rem 0.2rem 0 0.2rem;
+  }
+}
+
 .hobbies:hover {
   transform: scale(1.2);
 }
@@ -446,6 +452,12 @@
 .icon-contact {
   font-size: 8rem;
   color: white;
+}
+
+@media (max-width: 576px) {
+  .icon-contact {
+    font-size: 4rem;
+  }
 }
 
 .email {
