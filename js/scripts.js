@@ -44,6 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetSection = document.querySelector(targetId);
 
         if (targetSection) {
+          // Close mobile navbar after click
+          const navbarCollapse = document.querySelector('.navbar-collapse');
+          if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+            const bootstrapCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bootstrapCollapse) {
+              bootstrapCollapse.hide();
+            } else {
+              navbarCollapse.classList.remove('show');
+            }
+          }
+
           isScrolling = true;
           navLinks.forEach(l => l.classList.remove('active'));
           link.classList.add('active');
